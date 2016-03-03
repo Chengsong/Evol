@@ -10,33 +10,55 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-		<nav class="blue darken-1" role="navigation">
-			<div class="nav-wrapper container">
-				<a id="logo-container" href="#" class="brand-logo">VolocationLogo</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="#">Post</a></li>
-					<li><a href="#">Profile</a></li>
-					<li><a href="#">Search</a></li>
-					<li><a href="#">Support</a></li>
-				</ul>
-			</div>
-		</nav>
+    <header>
+  		<nav class="blue darken-1" role="navigation">
+  			<div class="nav-wrapper container">
+  				<a id="logo-container" href="#" class="brand-logo">VolocationLogo</a>
+  				<ul class="right hide-on-med-and-down">
+  					<li><a href="#">Post</a></li>
+  					<li><a href="#">Profile</a></li>
+  					<li><a href="#">Search</a></li>
+  					<li><a href="#">Support</a></li>
+  				</ul>
+  			</div>
+  		</nav>
+    </header>
 
-		<div> Map goes here </div>
+    <main>
+		  <div id="map-canvas"> Error loading Google Map </div>
+    </main>
 		
 		<footer class="page-footer orange darken-1">
+      <div class="container">
+        <h6 class="white-text center"> Follow us on: </h6>
+        <h5 class="white-text center"> 
+          <i class="mdi mdi-facebook-box"></i>
+          <i class="mdi mdi-twitter-box"></i>
+          <i class="mdi mdi-linkedin-box"></i>
+          <i class="mdi mdi-google-plus-box"></i>
+          <i class="mdi mdi-pinterest-box"></i>
+          <i class="mdi mdi-reddit"></i>
+          <i class="mdi mdi-wordpress"></i>
+          <i class="mdi mdi-email"></i>
+        <h5>
+      </div>
 			<div class="footer-copyright">
-				<div class="container">
-					Made by Chengsong Hua
+				<div class="container center">
+					Made by <span class="orange-text text-lighten-3">Chengsong Hua </span>
 				</div>
 			</div>
 		</footer>
 
     <!--Scripts-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initialize"
+        async defer></script>
   </body>
 </html>

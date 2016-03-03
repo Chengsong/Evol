@@ -1,3 +1,5 @@
+//google.maps.visualRefresh = true;
+
 var map;
 function initialize() {
   var mapOptions = {
@@ -15,12 +17,11 @@ function initialize() {
       var infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        content: 'Location found using HTML5.'
+        content: 'Current Location'
       });
 
       map.setCenter(pos);
     }, function() {
-      console.log("failed geolocation")
       handleNoGeolocation(true);
     });
   } else {
@@ -45,4 +46,5 @@ function handleNoGeolocation(errorFlag) {
   var infowindow = new google.maps.InfoWindow(options);
   map.setCenter(options.position);
 }
+//google.maps.event.addDomListener(window, 'load', initialize);
 

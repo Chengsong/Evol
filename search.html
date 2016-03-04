@@ -16,28 +16,28 @@
 
   <body>
     <header>
-  		<nav class="blue darken-1" role="navigation">
-  			<div class="nav-wrapper container">
-  				<a id="logo-container" href="#" class="brand-logo"><img id="logo" src="images/evollogo.png"></a>
-  				<ul class="right hide-on-med-and-down">
-  					<li><a href="create_post.html"><i class="material-icons left"> library_add</i>Post</a></li>
-  					<li><a href="profile.html"><i class="material-icons left"> perm_identity</i>Profile</a></li>
-  					<li><a href="search.html"><i class="material-icons left"> search</i>Search</a></li>
-  					<li><a href="support.html"><i class="material-icons left"> info_outline</i>Support</a></li>
-  				</ul>
-  			</div>
-  		</nav>
+      <nav class="blue darken-1" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo"><img id="logo" src="images/evollogo.png"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="create_post.html"><i class="material-icons left"> library_add</i>Post</a></li>
+            <li><a href="profile.html"><i class="material-icons left"> perm_identity</i>Profile</a></li>
+            <li class="active"><a href="#"><i class="material-icons left"> search</i>Search</a></li>
+            <li><a href="support.html"><i class="material-icons left"> info_outline</i>Support</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
       <div class="container">
         <div class="section no-pad-bot">
-          <div id="map-canvas"> Error loading map </div>
+          <div id="map-canvas"> Place Holder </div>
         </div>
       <div class="container">
     </main>
-		
-		<footer class="page-footer orange darken-1">
+    
+    <footer class="page-footer orange darken-1">
       <div class="container">
         <h6 class="white-text center"> Follow us on: </h6>
         <h5 class="white-text center" style="cursor: default;"> 
@@ -51,17 +51,15 @@
           <a href="#" class="white-text"><i class="mdi mdi-email"></i></a>
         <h5>
       </div>
-			<div class="footer-copyright">
-				<div class="container center">
-					Made by <span class="orange-text text-lighten-3">Chengsong Hua </span>
-				</div>
-			</div>
-		</footer>
+      <div class="footer-copyright">
+        <div class="container center">
+          Made by <span class="orange-text text-lighten-3">Chengsong Hua </span>
+        </div>
+      </div>
+    </footer>
 
     <!--Scripts-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initialize" async defer></script>
   </body>
 </html>

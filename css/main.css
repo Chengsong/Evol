@@ -1,7 +1,12 @@
 #map-canvas {
-  	width: 80%; 
+  	width: 100%; 
   	min-height: 440px;
   	height: 70vh;
+}
+
+#logo {
+	height:60px;
+	width:auto;
 }
     
 html, body {
